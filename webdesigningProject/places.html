@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathtaking Places</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/PINKbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 150px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="video/PLACES.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <div class="container">
+        <h1>BREATHTAKING PLACES</h1>
+        <div class="image-container">
+            <a href="booking.html"> <img src="images/newyork.jpg" alt="New York">
+                <a href="booking.html"><img src="images/dubai.jpg" alt="Dubai">
+                    <a href="booking.html"><img src="images/safari.jpg" alt="Safari">
+                        <a href="booking.html"><img src="images/italy.jpg" alt="Italy">
+                            <a href="booking.html"><img src="images/india.jpg" alt="India">
+                                <a href="booking.html"><img src="images/veince.jpeg" alt="veince">
+                                    <a href="booking.html"><img src="images/peru.jpeg" alt="peru">
+                                        <a href="booking.html"><img src="images/ester island.jpeg" alt="ester island">
+                                            <a href="booking.html"><img src="images/brazil.jpeg" alt="brazil">
+                                                <a href="booking.html"><img src="images/eygpt.jpeg" alt="eygpt">
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+header {
+    background-color:pink;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color:purple;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color:purple;
+}
+
+footer {
+    background-color:purple;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discounts</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/germany.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .discounts {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Ensure discounts wrap to the next line on smaller screens */
+        }
+
+        .discount {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33.33% - 20px); /* Adjust width for responsiveness */
+            margin-bottom: 20px;
+        }
+
+        .discount h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .discount p {
+            font-size: 16px;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .discount {
+                width: calc(50% - 20px); /* Adjust width for smaller screens */
+            }
+        }
+
+        /* Media query for even smaller screens */
+        @media (max-width: 480px) {
+            .discount {
+                width: 100%; /* Adjust width to full width for smallest screens */
+            }
+        }
+   </style>
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>Special Offers</h1>
+        <div class="discounts">
+            <div class="discount">
+                <h2>Summer Sale</h2>
+                <p>Enjoy up to 30% off on selected destinations this summer!</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="discount">
+                <h2>Winter Wonderland</h2>
+                <p>Book now and get 25% off on winter getaways!</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="discount">
+                <h2>New Year's Special</h2>
+                <p>Ring in the New Year with our exclusive 20% discount!</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

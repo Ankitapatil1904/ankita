@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+    <style>
+        #video-background {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1000;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="video/booking.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    <div class="container">
+        <h1>Booking Page</h1>
+        <form id="bookingForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
